@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<html>
+<head>
+    <title></title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post" action="/Home/Index" enctype="multipart/form-data">
+                    <label>name</label>
+                    <input type="text" name="name" class="form-control" />
+                    <label>email</label>
+                    <input type="email" name="email" class="form-control" />
+                    <label>mobile</label>
+                    <input type="text" name="mobile" class="form-control" />
+                    <label>profile</label>
+                    <input type="file" name="profile" class="form-control" />
+                    <label>password</label>
+                    <input type="text" name="password" class="form-control" />
+                    <input type="submit" class="btn btn-success mx-auto mt-4" value="save" />
+
+
+                </form>
+              
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

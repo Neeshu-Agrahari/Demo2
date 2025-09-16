@@ -1,0 +1,54 @@
+﻿@model List<practiceentities.Models.add_tbl>
+@{
+    ViewBag.Title = "Display";
+}
+<html>
+<head>
+    <title></title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="/Home/Index" class="btn btn-success">add new data</a>
+                </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-md-12">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>  id </th>
+                                <th>  name </th>
+                                <th>  email </th>
+                                <th>  mobile </th>
+                                <th>  profile </th>
+                                <th>  password </th>
+                                <th>  regdate </th>
+                                <th>  edit </th>
+                                <th>  delete </th>
+                            </tr>
+                            @foreach (var i in Model)
+                            {
+                                <tr>
+                                    <td>@i.id</td>
+                                    <td>@i.name</td>
+                                    <td>@i.email</td>
+                                    <td>@i.mobile</td>
+                                    <td><img src="~/Content/images/@i.profile" width="50" height="50"/></td>
+                                    @*<td><img src="@Url.Content("/Content/images/"+i.profile)" width="50" height="50"/></td>*@
+                                    <td>@i.password</td>
+                                    <td>@i.regdate</td>
+                                    <td><a href="/Home/Update/@i.id">update</a></td>
+                                    <td><a href="/Home/delete/@i.id">delete</a></td>
+                                </tr>
+                            }
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
