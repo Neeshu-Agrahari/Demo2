@@ -12,7 +12,7 @@ namespace practiceentities.Controllers
     {
         adoonlyEntities1 db = new adoonlyEntities1();
         // GET: Home
-        // neeshu
+        // neeshu agrawal
         public ActionResult Index()
         {
             return View();
