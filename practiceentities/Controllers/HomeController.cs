@@ -47,6 +47,10 @@ namespace practiceentities.Controllers
             return View(s);
         }
 
+        public ActionResult name()
+        {
+            return View();
+        }
 
 
         }
