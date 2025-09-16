@@ -12,6 +12,7 @@ namespace practiceentities.Controllers
     {
         adoonlyEntities1 db = new adoonlyEntities1();
         // GET: Home
+        // neeshu
         public ActionResult Index()
         {
             return View();
